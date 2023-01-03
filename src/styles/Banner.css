@@ -1,0 +1,43 @@
+.homeBanner {
+
+    margin: 50px 0;
+    background-image: url("../assets/images/banner.png");
+
+    width: 80%;
+    height: 223px;
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    background-color: black;
+}
+
+.homeBannerTitle {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    z-index: 2;
+    border-radius: 25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background: rgba(0, 0, 0, 0.3);
+}

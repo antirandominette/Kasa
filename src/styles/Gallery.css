@@ -1,0 +1,11 @@
+.homeGallery {
+    /* position: relative; */
+    width: 80%;
+    height: 830px;
+    top: 437px;
+
+    background: #f7f7f7;
+    border-radius: 25px;
+
+    overflow: hidden;
+}
