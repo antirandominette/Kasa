@@ -1,5 +1,5 @@
-import Card from './Card';
-import '../styles/Gallery.css';
+import Card from '../GalleryCard/GalleryCard';
+import './Gallery.css';
 
 function Gallery() {
     return(

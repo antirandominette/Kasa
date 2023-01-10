@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import "../styles/Header.css";
+import { NavLink } from "react-router-dom";
+import "./Header.css";
 
 function Header() {
     return(
         <header className="header">
-            <Link to="/">
+            <NavLink to="/">
                 <svg width="211" height="68" viewBox="0 0 211 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.0745 34.6485L8.84014 46.1362V62.2561H0V0H8.84014V34.8338L42.359 0H52.4883L26.1521 27.9782L54.33 62.2561H44.0165L20.0745 34.6485Z" fill="#FF6060"/>
                     <path d="M118.789 57.2534L122.289 50.5831C126.34 53.3624 132.602 55.4005 138.68 55.4005C146.599 55.4005 149.73 52.9918 149.73 48.9155C149.73 38.3542 120.078 47.4332 120.078 28.7193C120.078 20.1962 127.629 14.6376 139.6 14.6376C145.678 14.6376 152.676 16.3052 156.728 18.8992L153.045 25.5695C148.809 22.7902 144.205 21.8638 139.6 21.8638C132.234 21.8638 128.55 24.6431 128.55 28.3488C128.55 39.4659 158.202 30.3869 158.202 48.7302C158.202 57.2534 150.466 62.6267 137.943 62.6267C130.392 62.812 122.657 60.4033 118.789 57.2534Z" fill="#FF6060"/>
@@ -12,10 +12,10 @@ function Header() {
                     <path d="M91.5323 49.842V62.4414L96.8732 59.2916V46.6921L91.5323 49.842Z" fill="#FF6060"/>
                     <path d="M106.266 34.4632L84.3497 21.6785L72.1945 14.6376L60.2234 35.5749L60.4076 55.2153L82.1396 68L84.3497 66.703V48.1744L94.1106 30.9428L104.056 36.6866V55.2153L106.266 53.9183V34.4632Z" fill="#FF6060"/>
                 </svg>
-            </Link>
+            </NavLink>
             <nav className="headerNav">
-                <Link className="navItem" to="/">Accueil</Link>
-                <Link className="navItem" to="/about-us">A Propos</Link>
+                <NavLink className="navItem" to="/">Accueil</NavLink>
+                <NavLink className="navItem" to="/about-us">A Propos</NavLink>
             </nav>
         </header>
     );

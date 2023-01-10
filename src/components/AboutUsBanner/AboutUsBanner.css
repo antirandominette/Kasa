@@ -1,0 +1,17 @@
+.aboutUsBanner {
+    margin: 50px 0;
+    background-image: url("../../assets/images/aboutUsBanner.png");
+
+    width: 80%;
+    height: 223px;
+
+    border-radius: 25px;
+
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    background-color: black;
+
+    filter: brightness(.8);
+}

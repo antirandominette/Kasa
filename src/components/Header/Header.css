@@ -26,3 +26,11 @@
     width: 136px;
     text-align: right;
 }
+.navItem:hover {
+    color: #FF6060;
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+}

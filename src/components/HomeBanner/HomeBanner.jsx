@@ -1,6 +1,6 @@
-import "../styles/Banner.css"
+import "./HomeBanner.css"
 
-function Banner() {
+function HomeBanner() {
     return(
         <div className="homeBanner">
             <h1 className="homeBannerTitle">Chez vous, partout et ailleurs</h1>
@@ -8,4 +8,4 @@ function Banner() {
     );
 }
 
-export default Banner;
+export default HomeBanner;
