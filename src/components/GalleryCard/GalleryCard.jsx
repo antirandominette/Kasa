@@ -1,6 +1,6 @@
 import './GalleryCard.css'
 import logements from '../../data/logements.json';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 function Card() {
@@ -8,12 +8,12 @@ function Card() {
         <div className="galleryCardContainer">
             {
                 logements.map((logement) => 
-                    <Link key={ logement.id } className='galleryCard'> 
+                    <NavLink key={ logement.id } className='galleryCard' to={`/logement/${logement.id}`}> 
                         <div className="cardContent">
                             <img className='cardImg' src={ logement.cover }  alt={ logement.tags } />
                             <h3 className='cardTitle'>{ logement.title }</h3>
                         </div>
-                    </Link>
+                    </NavLink>
                 )
             }
         </div>

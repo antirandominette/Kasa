@@ -12,7 +12,7 @@ function AboutUs() {
             <AboutUsBanner />
             { dropDownContent.map((item) => {
                     return(
-                        <Collapse key={ item.id } id={ item.id } title={ item.title } description={ item.description }  />
+                        <Collapse newClassName="collapseContainer" key={ item.id } id={ item.id } title={ item.title } description={ item.description }  />
                     );
             }) }
             <Footer />

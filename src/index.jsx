@@ -5,6 +5,7 @@ import FicheLogement from './pages/FicheLogement/FicheLogement';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Error404 from './pages/Error404/Error404';
+import "./index.css"
 
 const root = document.getElementById('root');
 
@@ -13,7 +14,7 @@ createRoot(root).render(
     <Router>
       <Routes>
         <Route path="/" element={ <Home /> } />
-        <Route path='/logement' element={ <FicheLogement /> } />
+        <Route path='/logement/:id' element={ <FicheLogement /> } />
         <Route path='/about-us' element={ <AboutUs /> } />
         <Route path='*' element={ <Error404 /> } />
       </Routes>
