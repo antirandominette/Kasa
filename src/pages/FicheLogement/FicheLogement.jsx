@@ -4,13 +4,16 @@ import Collapse from '../../components/Collapse/Collapse';
 import logements from '../../data/logements.json';
 import { useParams } from 'react-router-dom';
 import Tag from '../../components/Tag/Tag';
+import Footer from '../../components/Footer/Footer';
 import './FicheLogement.css';
 
 function FicheLogement() {
+
     const { id } = useParams();
     const urlId = id;
     const foundLogement = logements.find(logement => logement.id === urlId);
 
+    
     if (!foundLogement) {
         return <Error404 />;
     }
@@ -37,7 +40,7 @@ function FicheLogement() {
     
                                 <div>
                                     <div className='hostInfo'>
-                                        <p>{ foundLogement.host.name }</p>
+                                        <p>{ foundLogement.host.name  }</p>
                                         <img src={ foundLogement.host.picture } alt={ foundLogement.host.name } />
                                     </div>
                                     <p>{ foundLogement.rating }</p>
@@ -46,12 +49,17 @@ function FicheLogement() {
                             </div>
                             
                             <div className='ficheLogementLowerContainer'>
-                                <Collapse id={ foundLogement.id } title='description' description={ foundLogement.description } />
-                                <Collapse id={ foundLogement.id } title='equipements' description={ foundLogement.equipments } />
+                                <div className='collapseContainer'>
+                                    <Collapse id={ foundLogement.id } title='Description' description={ foundLogement.description } colOpen={ true } />
+                                </div>
+                                <div className='collapseContainer'>
+                                    <Collapse id={ foundLogement.id } title='Équipements' equipements={ foundLogement.equipments } colOpen={ true } />
+                                </div>
                             </div>
                         </div>
                     )
                 }
+                <Footer />
             </div>
         );
     }

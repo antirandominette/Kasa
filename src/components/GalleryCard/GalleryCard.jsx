@@ -11,7 +11,7 @@ function Card() {
                     <NavLink key={ logement.id } className='galleryCard' to={`/logement/${logement.id}`}> 
                         <div className="cardContent">
                             <img className='cardImg' src={ logement.cover }  alt={ logement.tags } />
-                            <h3 className='cardTitle'>{ logement.title }</h3>
+                            <h2 className='cardTitle'>{ logement.title }</h2>
                         </div>
                     </NavLink>
                 )

@@ -79,8 +79,19 @@
 }
 
 .ficheLogementLowerContainer {
+    margin-top: 24px;
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: space-between;
+}
+.ficheLogementContainer .collapseContainer:nth-child(1) {
+    align-items: flex-start;
+    margin-bottom: 250px;
+}
+.ficheLogementContainer .collapseContainer:nth-child(2) {
+    align-items: flex-end;
+}
+.ficheLogementContainer .collapseDescriptionContainer, .ficheLogementContainer .collapseEquipementsContainer {
+    height: 250px;
 }

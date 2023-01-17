@@ -52,11 +52,12 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     border-radius : 5px;
 
     position: relative;
+    padding-top: 30px;
 }
 .collapseDescriptionContainer::before {
     content: "";
@@ -91,5 +92,65 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 34px;
+    margin: 0;
 
+}
+
+.collapseEquipementsContainer {
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FF6060;
+
+    background: #f7f7f7;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-radius : 5px;
+
+    position: relative;
+
+    padding-top: 30px;
+}
+.collapseEquipementsContainer::before {
+    content: "";
+    position: absolute;
+    
+    background-color: transparent;
+    top: 0px;
+    left: 0;
+    height: 50px;
+    width: 25px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 -25px 0 0 #f7f7f7; 
+    z-index: -1;
+}
+.collapseEquipementsContainer::after {
+    content: "";
+    position: absolute;
+    
+    background-color: transparent;
+    top: 0px;
+    right: 0;
+    height: 50px;
+    width: 25px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -25px 0 0 #f7f7f7; 
+    z-index: -1;
+}
+
+.collapseEquipements {
+    width: 95%;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }

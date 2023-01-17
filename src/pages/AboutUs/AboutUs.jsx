@@ -10,9 +10,11 @@ function AboutUs() {
         <div className="aboutUsContentContainer">
             <Header />
             <AboutUsBanner />
-            { dropDownContent.map((item) => {
+            { dropDownContent.map((item, index) => {
                     return(
-                        <Collapse newClassName="collapseContainer" key={ item.id } id={ item.id } title={ item.title } description={ item.description }  />
+                        <div key={ index } className='collapseContainer'>
+                            <Collapse newClassName="collapseContainer" key={ item.id } id={ item.id } title={ item.title } description={ item.description }  />
+                        </div>
                     );
             }) }
             <Footer />
