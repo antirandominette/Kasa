@@ -5,6 +5,7 @@ import logements from '../../data/logements.json';
 import { useParams } from 'react-router-dom';
 import Tag from '../../components/Tag/Tag';
 import Footer from '../../components/Footer/Footer';
+import Carousel from '../../components/Carousel/Carousel';
 import './FicheLogement.css';
 
 function FicheLogement() {
@@ -16,6 +17,18 @@ function FicheLogement() {
         return <Error404 />;
     }
     else {
+        function displayCarousel(logement) {
+            const slides = [];
+
+            logement.pictures.forEach(photo => {
+                slides.push(photo);
+            });
+
+            return (
+                <Carousel slides={ slides } />
+            );
+        }
+
         function displayRatingStars(rating) {
             const maxRate = 5;
             const fullStars = rating;
@@ -54,7 +67,7 @@ function FicheLogement() {
                 {
                     foundLogement && (
                         <div className='ficheLogementContent'>
-                            <img className='ficheLogementImg' src={ foundLogement.cover } alt={ foundLogement.tags } />
+                            { displayCarousel(foundLogement) }
                             <div className='ficheLogementUpperContainer'>
                                 <div>
                                     <h2 className='ficheLogementTitle'>{ foundLogement.title }</h2>
