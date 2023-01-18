@@ -67,6 +67,7 @@
     text-align: right;
 
     height: fit-content;
+    width: 93px;
 }
 .hostInfo img {
     width: 64px;
@@ -93,5 +94,15 @@
     align-items: flex-end;
 }
 .ficheLogementContainer .collapseDescriptionContainer, .ficheLogementContainer .collapseEquipementsContainer {
-    height: 250px;
+    height: fit-content;
+    padding-bottom: 27px;
+}
+
+.ratingStarsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    width: 100%;
 }

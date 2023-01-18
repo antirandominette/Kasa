@@ -57,7 +57,7 @@
     border-radius : 5px;
 
     position: relative;
-    padding-top: 30px;
+    padding: 27px 0;
 }
 .collapseDescriptionContainer::before {
     content: "";
@@ -86,14 +86,14 @@
     z-index: -1;
 }
 
-.collapseDescription {
+.collapseDescription, .collapseEquipements {
     width: 95%;
 
     font-size: 24px;
     font-weight: 400;
     line-height: 34px;
     margin: 0;
-
+    list-style: none;
 }
 
 .collapseEquipementsContainer {
@@ -141,16 +141,4 @@
     border-top-right-radius: 20px;
     box-shadow: 0 -25px 0 0 #f7f7f7; 
     z-index: -1;
-}
-
-.collapseEquipements {
-    width: 95%;
-
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 34px;
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
