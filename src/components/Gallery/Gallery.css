@@ -1,13 +1,31 @@
-.homeGallery {
-    width: 80%;
-    height: fit-content;
-
-    padding-bottom: 56px;
-
-    background: #f7f7f7;
-    border-radius: 25px;
-
-    overflow: hidden;
+@media (min-width: 768px) {
+    .homeGallery {
+        width: 80%;
+        height: fit-content;
     
-    margin-bottom: 250px;
+        padding-bottom: 56px;
+    
+        background: #f7f7f7;
+        border-radius: 25px;
+    
+        overflow: hidden;
+        
+        margin-bottom: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .homeGallery {
+        width: 90%;
+        height: fit-content;
+    
+        padding-bottom: 56px;
+    
+        background: transparent;
+        border-radius: 25px;
+    
+        overflow: hidden;
+        
+        margin-bottom: 250px;
+    }
 }

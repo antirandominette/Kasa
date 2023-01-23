@@ -1,89 +1,209 @@
-.ficheLogementContent {
-    width: 80%;
+@media (min-width: 768px) {
+    .ficheLogementContent {
+        width: 80%;
+    }
+    
+    .ficheLogementContainer {
+        width: 100%;
+        height: 100;
+    
+        overflow-x: hidden;
+    
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .ficheLogementUpperContainer {
+        width: 100%;
+        height: fit-content;
+    
+        justify-content: space-between;
+    }
+    
+    .ficheLogementTitle {
+        font-size: 36px;
+        font-weight: 500;
+    
+        color: #FF6060;
+        margin: 0;
+    }
+    .ficheLogementLocation {
+        font-size: 18px;
+        font-weight: 500;
+    
+        color: #FF6060;
+        margin-top: 0;
+    }
+    
+    .hostInfo p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #FF6060;
+        margin: 0px 10px 0 0;
+    
+        text-align: right;
+    
+        height: fit-content;
+        width: 93px;
+    }
+    .hostInfo img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    
+        background: #C4C4C4;
+    
+        transform: translateY(-10px);
+    }
+
+    .ratingStars {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .ficheLogementLowerContainer {
+        margin-top: 24px;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-between;
+    }
+    .ficheLogementContainer .collapseContainer:nth-child(1) {
+        align-items: flex-start;
+        margin-bottom: 250px;
+    }
+    .ficheLogementContainer .collapseContainer:nth-child(2) {
+        align-items: flex-end;
+    }
+    .ficheLogementContainer .collapseDescriptionContainer, .ficheLogementContainer .collapseEquipementsContainer {
+        height: fit-content;
+        padding-bottom: 27px;
+    }
+    
+    .ratingStarsContainer {
+        margin-bottom: 10px;
+    
+        width: 100%;
+    }
+    
+    .noSelect {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
 }
 
-.ficheLogementContainer {
-    width: 100%;
-    height: 100;
+@media (max-width: 768px) {
+    .ficheLogementContent {
+        width: 90%;
+    }
+    
+    .ficheLogementContainer {
+        width: 100%;
+        height: 100;
+    
+        overflow-x: hidden;
+    
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .ficheLogementUpperContainer {
+        width: 100%;
+        height: fit-content;
+    
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .ficheLogementTitle {
+        font-size: 18px;
+        font-weight: 500;
+    
+        color: #FF6060;
+        margin: 0;
+    }
+    .ficheLogementLocation {
+        font-size: 14px;
+        font-weight: 500;
+    
+        color: #FF6060;
+        margin-top: 10px;
+    }
+    
+    .tagDivContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-    overflow-x: hidden;
+    .hostInfo {
+        order: 3;
+    }
+    .hostInfo p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #FF6060;
+        margin: 0px 10px 0 0;
+    
+        text-align: right;
+    
+        height: fit-content;
+        width: 63px;
+    }
+    .hostInfo img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    
+        background: #C4C4C4;
+    
+        transform: translateY(0);
+    }
+    
+    .ratingStars {
+        width: 15px;
+        height: 15px;
+    }
 
-    font-family: 'Montserrat', sans-serif;
-}
+    .ratingStarsContainer {
+        width: 100%;
 
-.ficheLogementUpperContainer {
-    width: 100%;
-    height: fit-content;
+        order: 2;
+    }
 
-    justify-content: space-between;
-}
+    .ficheLogementLowerContainer {
+        margin-top: 24px;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-between;
+        align-items: center;
 
-.ficheLogementTitle {
-    font-size: 36px;
-    font-weight: 500;
+        flex-direction: column;
+    }
+    .ficheLogementContainer .collapseContainer:nth-child(1) {
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .ficheLogementContainer .collapseContainer:nth-child(2) {
+        align-items: flex-end;
+    }
+    .ficheLogementContainer .collapseDescriptionContainer, .ficheLogementContainer .collapseEquipementsContainer {
+        height: fit-content;
+        padding-bottom: 27px;
+    }
+    
 
-    color: #FF6060;
-    margin: 0;
-}
-.ficheLogementLocation {
-    font-size: 18px;
-    font-weight: 500;
-
-    color: #FF6060;
-    margin-top: 0;
-}
-
-.hostInfo p {
-    font-size: 18px;
-    font-weight: 500;
-    color: #FF6060;
-    margin: 0px 10px 0 0;
-
-    text-align: right;
-
-    height: fit-content;
-    width: 93px;
-}
-.hostInfo img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-
-    background: #C4C4C4;
-
-    transform: translateY(-10px);
-}
-
-.ficheLogementLowerContainer {
-    margin-top: 24px;
-    width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-}
-.ficheLogementContainer .collapseContainer:nth-child(1) {
-    align-items: flex-start;
-    margin-bottom: 250px;
-}
-.ficheLogementContainer .collapseContainer:nth-child(2) {
-    align-items: flex-end;
-}
-.ficheLogementContainer .collapseDescriptionContainer, .ficheLogementContainer .collapseEquipementsContainer {
-    height: fit-content;
-    padding-bottom: 27px;
-}
-
-.ratingStarsContainer {
-    margin-bottom: 10px;
-
-    width: 100%;
-}
-
-.noSelect {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    
+    .noSelect {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
 }

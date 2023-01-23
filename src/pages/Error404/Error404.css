@@ -1,27 +1,60 @@
-.errorContentContainer {
-    width: 100%;
-    height: 100%;
-
-
-    overflow-x: hidden;
-    color: #FF6060;
-    font-family: 'Montserrat', sans-serif;
+@media (min-width: 768px) {
+    .errorContentContainer {
+        width: 100%;
+        height: 100%;
+    
+    
+        overflow-x: hidden;
+        color: #FF6060;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #errorTitle {
+        font-size: 288px;
+        font-weight: 700;
+        margin-bottom: 66px;
+    }
+    
+    #errorDescription {
+        font-size: 34px;
+        font-weight: 500;
+    
+        margin-bottom: 182px;
+    }
+    
+    #errorLinkToHome {
+        color: #FF6060;
+        font-size: 18px;
+    }
 }
 
-#errorTitle {
-    font-size: 288px;
-    font-weight: 700;
-    margin-bottom: 66px;
-}
+@media (max-width: 768px ) {
+    .errorContentContainer {
+        width: 100%;
+        height: 100%;
+    
+    
+        overflow-x: hidden;
+        color: #FF6060;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #errorTitle {
+        font-size: 96px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    
+    #errorDescription {
+        font-size: 18px;
+        font-weight: 500;
 
-#errorDescription {
-    font-size: 34px;
-    font-weight: 500;
-
-    margin-bottom: 182px;
-}
-
-#errorLinkToHome {
-    color: #FF6060;
-    font-size: 18px;
+        text-align: center;
+        margin: 0 auto 133px auto
+    }
+    
+    #errorLinkToHome {
+        color: #FF6060;
+        font-size: 14px;
+    }
 }

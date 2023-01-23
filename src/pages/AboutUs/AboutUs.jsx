@@ -13,7 +13,7 @@ function AboutUs() {
 
             { dropDownContent.map(item => {
                     return(
-                        <div key={ item.id } className='collapseContainer flexCol'>
+                        <div key={ item.id } className='aboutUsCollapse collapseContainer flexCol'>
                             <Collapse newClassName="collapseContainer" key={ item.id } id={ item.id } title={ item.title } description={ item.description } IsOpen={ false }  />
                         </div>
                     );

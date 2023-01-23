@@ -1,133 +1,276 @@
-.collapseContainer { 
-    width: 80%;
-    height: fit-content;
-
-    margin-bottom: 20px;
-}
-.collapseContainer:last-of-type {
-    margin-bottom: 250px;
-}
-
-.collapseBody {
-    background: #FF6060;
-    border-radius: 10px;
-    width: 80%;
-
-    cursor: pointer;
-}
-
-.collapseArrow {
-    margin-right: 25px;
-}
-.open {
-    transform: rotate(180deg);
-}
-
-.collapseTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    color: #FFF;
-    margin: 10px 0 10px 20px;
-}
-
-.collapseDescriptionContainer {
-    width: 80%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #FF6060;
-
-    background: #f7f7f7;
-    height: fit-content;
-
-    justify-content: center;
-    align-items: flex-start;
-
-    border-radius : 5px;
-
-    position: relative;
-    padding: 27px 0;
-}
-.collapseDescriptionContainer::before {
-    content: "";
-    position: absolute;
+@media (min-width: 768px) {
+    .collapseContainer { 
+        width: 80%;
+        height: fit-content;
     
-    background-color: transparent;
-    top: 0px;
-    left: 0;
-    height: 50px;
-    width: 25px;
-    border-top-left-radius: 20px;
-    box-shadow: 0 -25px 0 0 #f7f7f7; 
-    z-index: -1;
-}
-.collapseDescriptionContainer::after {
-    content: "";
-    position: absolute;
+        margin-bottom: 20px;
+    }
+    .collapseContainer:last-of-type {
+        margin-bottom: 250px;
+    }
     
-    background-color: transparent;
-    top: 0px;
-    right: 0;
-    height: 50px;
-    width: 25px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 -25px 0 0 #f7f7f7; 
-    z-index: -1;
-}
-
-.collapseDescription, .collapseEquipements {
-    width: 95%;
-
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 34px;
-    margin: 0;
-    list-style: none;
-}
-
-.collapseEquipementsContainer {
-    width: 80%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #FF6060;
-
-    background: #f7f7f7;
-    height: fit-content;
-
-    justify-content: center;
-    align-items: flex-start;
-
-    border-radius : 5px;
-
-    position: relative;
-
-    padding-top: 30px;
-}
-.collapseEquipementsContainer::before {
-    content: "";
-    position: absolute;
+    .collapseBody {
+        background: #FF6060;
+        border-radius: 10px;
+        width: 80%;
     
-    background-color: transparent;
-    top: 0px;
-    left: 0;
-    height: 50px;
-    width: 25px;
-    border-top-left-radius: 20px;
-    box-shadow: 0 -25px 0 0 #f7f7f7; 
-    z-index: -1;
-}
-.collapseEquipementsContainer::after {
-    content: "";
-    position: absolute;
+        cursor: pointer;
+    }
     
-    background-color: transparent;
-    top: 0px;
-    right: 0;
-    height: 50px;
-    width: 25px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 -25px 0 0 #f7f7f7; 
-    z-index: -1;
+    .collapseArrow {
+        margin-right: 25px;
+        width: 25px;
+        height: 15px;
+    }
+    .open {
+        transform: rotate(180deg);
+    }
+    
+    .collapseTitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #FFF;
+        margin: 10px 0 10px 20px;
+    }
+    
+    .collapseDescriptionContainer {
+        width: 80%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #FF6060;
+    
+        background: #f7f7f7;
+        height: fit-content;
+    
+        justify-content: center;
+        align-items: flex-start;
+    
+        border-radius : 5px;
+    
+        position: relative;
+        padding: 27px 0;
+    }
+    .collapseDescriptionContainer::before {
+        content: "";
+        position: absolute;
+        
+        background-color: transparent;
+        top: 0px;
+        left: 0;
+        height: 50px;
+        width: 25px;
+        border-top-left-radius: 20px;
+        box-shadow: 0 -25px 0 0 #f7f7f7; 
+        z-index: -1;
+    }
+    .collapseDescriptionContainer::after {
+        content: "";
+        position: absolute;
+        
+        background-color: transparent;
+        top: 0px;
+        right: 0;
+        height: 50px;
+        width: 25px;
+        border-top-right-radius: 20px;
+        box-shadow: 0 -25px 0 0 #f7f7f7; 
+        z-index: -1;
+    }
+    
+    .collapseDescription, .collapseEquipements {
+        width: 95%;
+    
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        margin: 0;
+        padding: 0 20px 0 12px;
+        list-style: none;
+    }
+    
+    .collapseEquipementsContainer {
+        width: 80%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #FF6060;
+    
+        background: #f7f7f7;
+        height: fit-content;
+    
+        justify-content: center;
+        align-items: flex-start;
+    
+        border-radius : 5px;
+    
+        position: relative;
+    
+        padding-top: 30px;
+    }
+    .collapseEquipementsContainer::before {
+        content: "";
+        position: absolute;
+        
+        background-color: transparent;
+        top: 0px;
+        left: 0;
+        height: 50px;
+        width: 25px;
+        border-top-left-radius: 20px;
+        box-shadow: 0 -25px 0 0 #f7f7f7; 
+        z-index: -1;
+    }
+    .collapseEquipementsContainer::after {
+        content: "";
+        position: absolute;
+        
+        background-color: transparent;
+        top: 0px;
+        right: 0;
+        height: 50px;
+        width: 25px;
+        border-top-right-radius: 20px;
+        box-shadow: 0 -25px 0 0 #f7f7f7; 
+        z-index: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .collapseContainer { 
+        width: 100%;
+        height: fit-content;
+    
+        margin-bottom: 20px;
+    }
+    .collapseContainer:last-of-type {
+        margin-bottom: 250px;
+    }
+    
+    .collapseBody {
+        background: #FF6060;
+        border-radius: 5px;
+        width: 100%;
+    
+        cursor: pointer;
+    }
+    
+    .collapseArrow {
+        margin-right: 15px;
+        width: 9px;
+        height: 15px;
+    }
+    .open {
+        transform: rotate(180deg);
+    }
+    
+    .collapseTitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        color: #FFF;
+        margin: 10px 0 10px 20px;
+    }
+    
+    .collapseDescriptionContainer {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: #FF6060;
+    
+        background: #f7f7f7;
+        height: fit-content;
+    
+        justify-content: center;
+        align-items: flex-start;
+    
+        border-radius : 5px;
+    
+        position: relative;
+        padding: 27px 0;
+    }
+    .collapseDescriptionContainer::before {
+        content: "";
+        position: absolute;
+        
+        background-color: transparent;
+        top: 0px;
+        left: 0;
+        height: 50px;
+        width: 25px;
+        border-top-left-radius: 20px;
+        box-shadow: 0 -25px 0 0 #f7f7f7; 
+        z-index: -1;
+    }
+    .collapseDescriptionContainer::after {
+        content: "";
+        position: absolute;
+        
+        background-color: transparent;
+        top: 0px;
+        right: 0;
+        height: 50px;
+        width: 25px;
+        border-top-right-radius: 20px;
+        box-shadow: 0 -25px 0 0 #f7f7f7; 
+        z-index: -1;
+    }
+    
+    .collapseDescription, .collapseEquipements {
+        width: 95%;
+    
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        margin: 0;
+        list-style: none;
+        padding: 0 11px;
+    }
+    
+    .collapseEquipementsContainer {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: #FF6060;
+    
+        background: #f7f7f7;
+        height: fit-content;
+    
+        justify-content: center;
+        align-items: flex-start;
+    
+        border-radius : 5px;
+    
+        position: relative;
+    
+        padding-top: 30px;
+    }
+    .collapseEquipementsContainer::before {
+        content: "";
+        position: absolute;
+        
+        background-color: transparent;
+        top: 0px;
+        left: 0;
+        height: 50px;
+        width: 25px;
+        border-top-left-radius: 20px;
+        box-shadow: 0 -25px 0 0 #f7f7f7; 
+        z-index: -1;
+    }
+    .collapseEquipementsContainer::after {
+        content: "";
+        position: absolute;
+        
+        background-color: transparent;
+        top: 0px;
+        right: 0;
+        height: 50px;
+        width: 25px;
+        border-top-right-radius: 20px;
+        box-shadow: 0 -25px 0 0 #f7f7f7; 
+        z-index: -1;
+    }
 }

@@ -1,17 +1,38 @@
-.aboutUsBanner {
-    margin: 50px 0;
-    background-image: url("../../assets/images/aboutUsBanner.png");
+@media (min-width: 768px) {
+    .aboutUsBanner {
+        margin: 50px 0;
+        background-image: url("../../assets/images/aboutUsBanner.png");
+    
+        width: 80%;
+        height: 223px;
+    
+        border-radius: 25px;
+    
+        background-size: cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    
+        background-color: black;
+    
+        filter: brightness(.8);
+    }
+}
 
-    width: 80%;
-    height: 223px;
-
-    border-radius: 25px;
-
-    background-size: cover;
-    object-fit: cover;
-    background-repeat: no-repeat;
-
-    background-color: black;
-
-    filter: brightness(.8);
+@media (max-width: 768px) {
+    .aboutUsBanner {
+        margin: 20px 0;
+        background-image: url("../../assets/images/aboutUsBannerMobile.png");
+    
+        width: 90%;
+        height: 223px;
+    
+        border-radius: 10px;
+    
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        background-color: black;
+    
+        filter: brightness(.8);
+    }
 }
