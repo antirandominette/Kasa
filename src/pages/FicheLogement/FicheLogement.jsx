@@ -62,17 +62,17 @@ function FicheLogement() {
         }
 
         return (
-            <div className='ficheLogementContainer'>
+            <section className='ficheLogementContainer flexCol'>
                 <Header />
                 {
                     foundLogement && (
-                        <div className='ficheLogementContent'>
+                        <div className='ficheLogementContent flexCol'>
                             { displayCarousel(foundLogement) }
-                            <div className='ficheLogementUpperContainer'>
+                            <div className='ficheLogementUpperContainer flex'>
                                 <div>
                                     <h2 className='ficheLogementTitle'>{ foundLogement.title }</h2>
                                     <p className='ficheLogementLocation'>{ foundLogement.location }</p>
-                                    <div className='ficheLogementTagsContainer'>
+                                    <div className='flex'>
                                         { 
                                             foundLogement.tags.map(tag => 
                                                 <Tag key={ tag } tag={ tag } />
@@ -82,21 +82,23 @@ function FicheLogement() {
                                 </div>
     
                                 <div>
-                                    <div className='hostInfo'>
+                                    <div className='hostInfo flex'>
                                         <p>{ foundLogement.host.name  }</p>
-                                        <img src={ foundLogement.host.picture } alt={ foundLogement.host.name } />
+                                        <figure>
+                                            <img src={ foundLogement.host.picture } alt={ foundLogement.host.name } />
+                                        </figure>
                                     </div>
-                                    <div className='ratingStarsContainer'>
+                                    <div className='ratingStarsContainer flexRow'>
                                         { displayRatingStars(foundLogement.rating) }
                                     </div>
                                 </div>
                             </div>
                             
-                            <div className='ficheLogementLowerContainer'>
-                                <div className='collapseContainer'>
+                            <div className='ficheLogementLowerContainer flex'>
+                                <div className='collapseContainer flexCol'>
                                     <Collapse id={ foundLogement.id } title='Description' description={ foundLogement.description } IsOpen={ true } />
                                 </div>
-                                <div className='collapseContainer'>
+                                <div className='collapseContainer flexCol'>
                                     <Collapse id={ foundLogement.id } title='Équipements' equipements={ foundLogement.equipments } IsOpen={ true } />
                                 </div>
                             </div>
@@ -104,9 +106,11 @@ function FicheLogement() {
                     )
                 }
                 <Footer />
-            </div>
+            </section>
         );
     }
 }
 
 export default FicheLogement;
+
+//  min width 320px

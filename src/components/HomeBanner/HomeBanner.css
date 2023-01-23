@@ -7,11 +7,6 @@
 
     border-radius: 25px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     color: #FFF;
 
     background-size: cover;
@@ -47,7 +42,6 @@
     font-size: 48px;
     font-weight: 500;
 
-    display: flex;
     justify-content: center;
     align-items: center;
 }

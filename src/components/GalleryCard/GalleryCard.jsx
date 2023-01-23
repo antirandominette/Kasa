@@ -5,12 +5,15 @@ import { NavLink } from "react-router-dom";
 
 function Card() {
     return(
-        <div className="galleryCardContainer">
+        <div className="galleryCardContainer flex">
             {
-                logements.map((logement) => 
+                logements.map(logement => 
                     <NavLink key={ logement.id } className='galleryCard' to={`/logement/${logement.id}`}> 
-                        <div className="cardContent">
-                            <img className='cardImg' src={ logement.cover }  alt={ logement.tags } />
+                        <div>
+                            <figure>
+                                <img className='cardImg' src={ logement.cover }  alt={ logement.tags } />
+                            </figure>
+
                             <h2 className='cardTitle'>{ logement.title }</h2>
                         </div>
                     </NavLink>

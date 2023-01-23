@@ -6,12 +6,12 @@ import './Home.css';
 
 function Home() {
   return (
-    <div className='homeContentContainer'>
+    <section className='homeContentContainer'>
       <Header />
       <HomeBanner />
       <Gallery />
       <Footer />
-    </div>
+    </section>
   );
 }
 

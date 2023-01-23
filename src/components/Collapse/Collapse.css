@@ -2,11 +2,6 @@
     width: 80%;
     height: fit-content;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     margin-bottom: 20px;
 }
 .collapseContainer:last-of-type {
@@ -17,10 +12,6 @@
     background: #FF6060;
     border-radius: 10px;
     width: 80%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     cursor: pointer;
 }
@@ -50,7 +41,6 @@
     background: #f7f7f7;
     height: fit-content;
 
-    display: flex;
     justify-content: center;
     align-items: flex-start;
 
@@ -106,7 +96,6 @@
     background: #f7f7f7;
     height: fit-content;
 
-    display: flex;
     justify-content: center;
     align-items: flex-start;
 

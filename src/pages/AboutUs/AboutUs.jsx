@@ -7,18 +7,20 @@ import "./AboutUs.css";
 
 function AboutUs() {
     return(
-        <div className="aboutUsContentContainer">
+        <section className="aboutUsContentContainer flexCol">
             <Header />
             <AboutUsBanner />
+
             { dropDownContent.map(item => {
                     return(
-                        <div key={ item.id } className='collapseContainer'>
+                        <div key={ item.id } className='collapseContainer flexCol'>
                             <Collapse newClassName="collapseContainer" key={ item.id } id={ item.id } title={ item.title } description={ item.description } IsOpen={ false }  />
                         </div>
                     );
             }) }
+            
             <Footer />
-        </div>
+        </section>
     );
 }
 
