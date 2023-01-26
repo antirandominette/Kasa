@@ -16,7 +16,7 @@ function FicheLogement() {
     const foundLogement = logements.find(logement => logement.id === urlId);
     const [screenWidth, setScreenWidth] = useState([0, 0]);
 
-    useLayoutEffect(() => {
+    useLayoutEffect(() => { 
         function updateScreenWidth() {
             setScreenWidth(window.innerWidth);
         }
@@ -44,10 +44,10 @@ function FicheLogement() {
             );
         }
 
-        function displayRatingStars(rating) {
+        function displayRatingStars(rating) { // rating is a number between 0 and 5
             const maxRate = 5;
             const fullStars = rating;
-            const emptyStars = maxRate - fullStars;
+            const emptyStars = maxRate - fullStars; 
 
             const fullStarsArray = [];
             const emptyStarsArray = [];

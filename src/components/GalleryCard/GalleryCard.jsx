@@ -8,7 +8,7 @@ function Card() {
         <div className="galleryCardContainer flex">
             {
                 logements.map(logement => 
-                    <NavLink key={ logement.id } className='galleryCard' to={`/logement/${logement.id}`}> 
+                    <NavLink key={ logement.id } className='galleryCard' to={ `/logement/${logement.id}` }> 
                         <article>
                             <figure>
                                 <img className='cardImg' src={ logement.cover }  alt={ logement.tags } />

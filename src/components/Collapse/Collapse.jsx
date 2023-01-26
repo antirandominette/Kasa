@@ -17,10 +17,11 @@ function Collapse({ id, title, description, equipements, IsOpen }) {
                 </svg>
             </div>
             { open && !equipements && (
-                <div className='collapseDescriptionContainer flex'>
-                    <p className='collapseDescription'>{ description }</p>
-                </div>
-            )}
+                    <div className='collapseDescriptionContainer flex'>
+                        <p className='collapseDescription'>{ description }</p>
+                    </div>
+                )
+            }
             {  open && equipements && (
                     <div className='collapseEquipementsContainer flex'>
                         <ul className='collapseEquipements'>

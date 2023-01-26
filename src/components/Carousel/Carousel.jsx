@@ -5,13 +5,13 @@ function Carousel({ slides }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     function handlePreviousSlide() {
-        const firstSlide = currentIndex === 0;
+        const firstSlide = currentIndex === 0; // bool value
         const newIndex = firstSlide ? slides.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     }
 
     function handleNextSlide() {
-        const lastSlide = currentIndex === slides.length - 1;
+        const lastSlide = currentIndex === slides.length - 1; // bool value
         const newIndex = lastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex); 
     }
