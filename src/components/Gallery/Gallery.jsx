@@ -3,9 +3,9 @@ import './Gallery.css';
 
 function Gallery() {
     return(
-        <section className="homeGallery">
+        <div className="homeGallery">
             <Card />
-        </section>
+        </div>
     );
 }
 

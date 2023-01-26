@@ -17,7 +17,7 @@ function Carousel({ slides }) {
     }
 
     return(
-        <section className='carouselContainer'>
+        <div className='carouselContainer'>
             {
                 slides.length > 1 && (
                     <>
@@ -43,7 +43,7 @@ function Carousel({ slides }) {
             <figure>
                 <img className='carouselSlide noSelect' src={ slides[currentIndex] } alt={ `Slider ${currentIndex}` } /> 
             </figure>
-        </section>
+        </div>
     );
 }
 

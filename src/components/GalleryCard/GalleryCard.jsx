@@ -9,13 +9,13 @@ function Card() {
             {
                 logements.map(logement => 
                     <NavLink key={ logement.id } className='galleryCard' to={`/logement/${logement.id}`}> 
-                        <div>
+                        <article>
                             <figure>
                                 <img className='cardImg' src={ logement.cover }  alt={ logement.tags } />
                             </figure>
 
                             <h2 className='cardTitle'>{ logement.title }</h2>
-                        </div>
+                        </article>
                     </NavLink>
                 )
             }

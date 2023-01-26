@@ -63,7 +63,7 @@
         width: 100%;
     
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
 
         margin: 0 auto;
         border-radius: 25px;

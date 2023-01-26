@@ -63,6 +63,7 @@
     
         width: 136px;
         text-align: right;
+        text-transform: uppercase;
     }
     .navItem:hover {
         color: #FF6060;

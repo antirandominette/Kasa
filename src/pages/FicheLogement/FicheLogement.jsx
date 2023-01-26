@@ -127,5 +127,3 @@ function FicheLogement() {
 }
 
 export default FicheLogement;
-
-//  min width 320px
