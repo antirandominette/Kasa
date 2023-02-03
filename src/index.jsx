@@ -10,14 +10,12 @@ import "./index.css"
 const root = document.getElementById('root');
 
 createRoot(root).render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={ <Home /> } />
-        <Route path='/logement/:id' element={ <FicheLogement /> } />
-        <Route path='/about-us' element={ <AboutUs /> } />
-        <Route path='*' element={ <Error404 /> } />
-      </Routes>
-    </Router>
-  </React.StrictMode>
+  <Router>
+    <Routes>
+      <Route path="/" element={ <Home /> } />
+      <Route path='/logement/:id' element={ <FicheLogement /> } />
+      <Route path='/about-us' element={ <AboutUs /> } />
+      <Route path='*' element={ <Error404 /> } />
+    </Routes>
+  </Router>
 );
